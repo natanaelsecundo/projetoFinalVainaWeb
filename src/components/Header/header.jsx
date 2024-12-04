@@ -3,7 +3,7 @@
 import logo from '../../assets/logolivroHeader.png'
 import lupa from '../../assets/lupa.png'
 import { BrowserRouter , Route , Routes , Link } from "react-router-dom"
-import Inicio from '../../Pages/Inicio/inicio'
+import Inicio from '../../Pages/Inicio/Inicio'
 import QueroDoar from '../../Pages/QueroDoar/Querodoar'
 import Doados from '../../Pages/Doados/Doado'
 import S from './Header.module.scss'
