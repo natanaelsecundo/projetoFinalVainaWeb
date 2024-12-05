@@ -1,3 +1,8 @@
+
+
+
+
+
 header{
 
     height: 15vh;
@@ -64,6 +69,21 @@ header{
         border: solid 12px;
         h1{
             font-size: 2vw;
+        }
+    }
+}
+@media(max-width: 760px){
+    .boxlogo{
+        border: solid 12px;
+        h1{
+            font-size: 2vw;
+        }
+    }
+}
+@media (max-width: 380px) {
+    .boxMenu{
+        ul{
+            font-size: 18px;
         }
     }
 }
