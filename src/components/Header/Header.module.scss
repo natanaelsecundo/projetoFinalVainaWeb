@@ -13,19 +13,28 @@ header{
     
 }
 
-.boxlogo{
-   width: 23vw;
-   display: flex;
-   align-items: center;
-   color: white;
-   height: 15vh;
-   justify-content: space-evenly;    
-   }
-    h1{
-        font-size: 25px;
-        color:white;
-        font-weight: bold;
-    }
+.boxLogo {
+    width: 23vw;
+    display: flex;
+    align-items: center; 
+    justify-content: space-evenly; 
+    height: 15vh;
+    color: white;
+  }
+  
+  .boxLogo img {
+    height: 60%; 
+    width: auto; 
+  }
+  
+  h1 {
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    margin: 0; 
+    line-height: 1; 
+  }
+  
 
 .boxMenu{
     width: 35vw;
@@ -33,7 +42,7 @@ header{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        font-size: 20px;
+        
         a{
             color: white;
         }
@@ -41,40 +50,51 @@ header{
 
 }
 
-.boxSearch{
-    border: solid 2px white;
+.boxInput{
     width: 17vw;
     height: 6vh;
+    margin-right:20px;
+    border-radius: 15px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    border-radius: 15px;
-    padding-right: 20px;
-}
-
-.boxInput{
-    border:none;
-    outline: none;
-    width: 13vw;
-    background-color: transparent;
-    padding-left: 18px;
+    border:solid 2px;
+    justify-content: space-around;
     color: white;
-    font-size: 17px;
+    input{
+     width: 12vw;
+    outline: none;
+    background-color: transparent;
+    font-size: 15px;
     &::placeholder{
         color: white;
     }
-}
-@media (max-width: 1170px) {
-    .boxlogo{
-        border: solid 12px;
-        h1{
-            font-size: 2vw;
-        }
+    
     }
 }
-@media(max-width: 760px){
-    .boxlogo{
-        border: solid 12px;
+@media(max-width: 1120px){
+    
+    .boxLogo{
+       width: 25vw;
+        h1{
+            font-size: 1.9vw;
+        }
+        img{
+            width: 40%;
+        }
+    }
+    .boxMenu{
+       ul{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            a{
+                color: white;
+            }
+       } 
+    }
+}
+@media(max-width: 743px){
+    .boxLogo{
         h1{
             font-size: 2vw;
         }
@@ -87,3 +107,4 @@ header{
         }
     }
 }
+

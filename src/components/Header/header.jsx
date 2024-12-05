@@ -14,7 +14,7 @@ export default function header(){
       <header className={S.header}>
         <section className={S.boxLogo}>
            <img src={logo} alt="imagem contem livro aberto" />
-           <h1 className={S.boxLogo}>Livros Vai na Web</h1>
+           <h1>Livros Vai na Web</h1>
         </section>
         <nav className={S.boxMenu}>
             <ul>
@@ -24,8 +24,8 @@ export default function header(){
             </ul>
         </nav>
 
-        <div className= {S.boxSearch}>
-            <input className= {S.boxInput} type="text" 
+        <div className= {S.boxInput}>
+            <input className= {S.input} type="text" 
             placeholder="O que você procura? "/>
             <img src={lupa} alt="imagem de uma lupa" />
 
