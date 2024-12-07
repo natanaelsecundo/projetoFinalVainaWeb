@@ -27,6 +27,7 @@ header{
     width: auto; 
   }
   
+  
   h1 {
     font-size: 25px;
     color: white;
@@ -37,12 +38,12 @@ header{
   
 
 .boxMenu{
-    width: 35vw;
+    width:  35vw;
     ul{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        
+        font-size: 20px;
         a{
             color: white;
         }
@@ -61,12 +62,12 @@ header{
     justify-content: space-around;
     color: white;
     input{
-     width: 12vw;
+     width: 14vw;
     outline: none;
     background-color: transparent;
     font-size: 15px;
-    &::placeholder{
-        color: white;
+        &::placeholder{
+          color: white;
     }
     
     }
@@ -82,24 +83,43 @@ header{
             width: 40%;
         }
     }
+
     .boxMenu{
-       ul{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            a{
-                color: white;
-            }
-       } 
+        ul{
+           font-size: 2vw; 
+        }
     }
-}
-@media(max-width: 743px){
-    .boxLogo{
-        h1{
-            font-size: 2vw;
+    .boxInput{
+        width: 18vw;
+        input{
+            &::placeholder{
+                font-size: 1.2vw;
+            }
         }
     }
 }
+@media(max-width: 743px){
+   header{
+    height: 25vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+   }
+   .boxInput{
+    display: none;
+   }
+   .boxLogo{
+    width: 100%; 
+     h1 {font-size: 25px;
+      } img {width: 60px;
+    }
+  } .boxMenu{
+        width: 100%;
+        ul{
+            justify-content: space-evenly;
+            font-size:  20px;
+        }
+}
+    }
 @media (max-width: 380px) {
     .boxMenu{
         ul{

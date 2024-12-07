@@ -14,7 +14,7 @@
 }
 
 form{
-    border: solid 2px #005695;
+  border: solid 2px #005695;
     border-radius: 15px;
     height: 60vh;
     width: 25vw;
@@ -60,4 +60,46 @@ input:nth-child(6){
    color: white;
    cursor: pointer;
    font-size: 18px;
+}
+
+@media (max-width: 1120px){
+  form {
+      width: 40vw;
+      height: 55vh;
+  }
+  .doar {
+      width: 12vw;
+      font-size: 16px;
+  }
+  input {
+      width: 18vw;
+  }
+}
+
+@media (max-width: 760px){
+  form {
+      width: 60vw;
+      height: auto;
+  }
+  .doar {
+      width: 15vw;
+      font-size: 15px;
+  }
+  input {
+      width: 15vw;
+  }
+}
+
+@media (max-width: 427px){
+  form {
+      width: 80vw;
+      height: auto;
+  }
+  .doar {
+      width: 20vw;
+      font-size: 14px;
+  }
+  input {
+      width: 80vw;
+  }
 }

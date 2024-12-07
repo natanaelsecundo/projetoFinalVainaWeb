@@ -7,13 +7,13 @@ import Inicio from '../../Pages/Inicio/Inicio'
 import QueroDoar from '../../Pages/QueroDoar/QueroDoar'
 import Doados from '../../Pages/Doados/Doado'
 import S from './Header.module.scss'
-export default function header(){
+export default function Header(){
  
     return (
      <BrowserRouter>
       <header className={S.header}>
         <section className={S.boxLogo}>
-           <img src={logo} alt="imagem contem livro aberto" />
+           <img src={logo} alt="Logotipo representando um livro aberto" />
            <h1>Livros Vai na Web</h1>
         </section>
         <nav className={S.boxMenu}>
@@ -25,9 +25,12 @@ export default function header(){
         </nav>
 
         <div className= {S.boxInput}>
+
             <input className= {S.input} type="text" 
+
             placeholder="O que você procura? "/>
-            <img src={lupa} alt="imagem de uma lupa" />
+            
+            <img src={lupa} alt="Ícone de lupa para pesquisa" />
 
         </div>
 
@@ -41,3 +44,4 @@ export default function header(){
     )
     
 }
+

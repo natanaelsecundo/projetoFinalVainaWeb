@@ -3,7 +3,7 @@
     width: 100%;
     background-image: url('../../assets/Banner.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     display: flex;
     align-items: center;
     color: #FFF;
@@ -55,10 +55,17 @@
     }
   }
   
-  /* Responsividade */
+  
   @media (max-width: 1100px) {
-    .boxCard article p {
+    .firstSection{
+      background-size: cover;
+    }
+    .boxCard{ 
+      article{ 
+        p {
       font-size: 1.5vw;
+        }
+     }
     }
   }
   
@@ -74,7 +81,25 @@
         margin-left: 0;
       }
     }
-  
+   
+  }
+  @media (max-width: 660px) {
+    .firstSection{
+       background-position: center;
+    }}
+    @media (max-width: 427px) {
+      .devoDoar {
+        height: 220vh;
+        justify-content: space-evenly;
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .boxCard {
+        height: auto;
+      }
+    }
+    
     .devoDoar {
       height: 120vh;
   
@@ -93,7 +118,7 @@
       gap: 20px;
   
       article {
-        width: 200px; /* Substituir por percentuais se necessário */
+        width: 200px; 
         height: 250px;
   
         p {
@@ -101,18 +126,5 @@
         }
       }
     }
-  }
   
-  @media (max-width: 427px) {
-    .devoDoar {
-      height: 220vh;
-      justify-content: space-evenly;
-      display: flex;
-      flex-direction: column;
-    }
-  
-    .boxCard {
-      height: auto;
-    }
-  }
   
