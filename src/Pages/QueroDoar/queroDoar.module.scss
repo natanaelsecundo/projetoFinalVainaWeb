@@ -11,7 +11,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    h2{
+      justify-content: center;
+      text-align: center;
+    }
 }
+
 
 form{
   border: solid 2px #005695;
@@ -53,7 +58,7 @@ form{
 }
 
 input:nth-child(6){
-   width: 10vw;
+   width: 40%;
    height: 6vh;
    padding-left: 0;
    background-color: #005695;
@@ -77,8 +82,16 @@ input:nth-child(6){
 }
 
 @media (max-width: 760px){
-  form {
-      width: 60vw;
+  .container{
+    h2{
+      font-size: 20px;
+    }
+  }
+  .principal{
+    height: 60vh;
+  }
+    form {
+      width: 40vw;
       height: auto;
   }
   .doar {
@@ -92,7 +105,7 @@ input:nth-child(6){
 
 @media (max-width: 427px){
   form {
-      width: 80vw;
+      width: 40vw;
       height: auto;
   }
   .doar {
