@@ -86,12 +86,13 @@ input:nth-child(6){
     h2{
       font-size: 20px;
     }
+    
   }
   .principal{
     height: 60vh;
   }
     form {
-      width: 40vw;
+      width: 310px;
       height: auto;
   }
   .doar {
@@ -103,10 +104,11 @@ input:nth-child(6){
   }
 }
 
-@media (max-width: 427px){
+@media (max-width: 450px){
   form {
-      width: 40vw;
+      width: 310px;
       height: auto;
+      
   }
   .doar {
       width: 20vw;
