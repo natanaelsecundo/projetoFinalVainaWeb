@@ -21,7 +21,7 @@
     gap: 10px;
     article{
      border:  solid 3px #005695;
-     width: 170px;
+     width: 200px;
      height: 32vh;
      display: flex;
      justify-content: space-evenly;
@@ -38,20 +38,10 @@
     @media(max-width: 743px){
         .boxDoados{
          height: 80vh;
-         flex-direction: column;
-         justify-content: space-evenly;
+        
         }
         .boxcard{
-            height: 80vh;
+            height: 90vh;
         }
     }
-    @media(max-width: 427px){
-        .boxDoados{
-         height: 80vh;
-         flex-direction: column;
-         justify-content: space-evenly;
-        }
-        .boxcard{
-            height: 80vh;
-        }
-    }
+
